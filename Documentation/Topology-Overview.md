@@ -26,16 +26,13 @@ The network is logically segmented into multiple VLANs, each assigned a specific
 
 | VLAN ID | Name         | Purpose                         | IP Range         | Notes                           |
 |---------|--------------|----------------------------------|------------------|----------------------------------|
-| 1       | Management    | Admin devices and services       | 192.168.1.0/24   | Restricted access, WPA2         |
-| 2       | Trusted LAN   | Workstations and secure clients  | 192.168.2.0/24   | ACL-controlled, high trust      |
-| 3       | Server Zone   | Internal servers and backups     | 192.168.3.0/24   | Inter-zone access enabled       |
-| 4       | IoT Zone      | Smart home/embedded devices      | 192.168.4.0/24   | Internet access only            |
+| 1       | Internal Network    | Admin devices and services       | 192.168.1.0/24   | Restricted access, WPA2         |
+| 2       | IoT Network   | Workstations and secure clients  | 192.168.2.0/24   | ACL-controlled, high trust      |
+| 3       | Guest Network   | Internal servers and backups     | 192.168.3.0/24   | Inter-zone access enabled       |
+| 4       | SOC Network      | Smart home/embedded devices      | 192.168.4.0/24   | Internet access only            |
 | 5       | HoneyNet      | Honeypot systems and traps       | 192.168.5.0/24   | Captive portal, high logging    |
-| 10      | Client Zone   | Guest laptops, desktops          | 192.168.10.0/24  | Limited lateral access          |
-| 30      | Lab Devices   | Test equipment and labs          | 192.168.30.0/24  | No outbound by default          |
+| 10      | SAN   | Guest laptops, desktops          | 192.168.10.0/24  | Limited lateral access          |
 | 40      | DMZ           | Public-facing services           | 192.168.40.0/24  | Isolated disk, external-facing  |
-
-[Insert Image: logical-topology.png]
 
 ---
 
