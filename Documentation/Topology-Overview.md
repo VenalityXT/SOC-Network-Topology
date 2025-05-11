@@ -22,17 +22,16 @@ Internet → Modem → pfSense (WAN) → pfSense (LAN) → Main Switch → VLAN 
 
 ## 2. Logical Topology
 
-The network is logically segmented into multiple VLANs, each assigned a specific trust level and function:
+The network is logically segmented into multiple VLANs, each serving a specific purpose to enhance security and operational efficiency. Each VLAN is configured with specific access control policies to simulate real-world segmentation.
 
-| VLAN ID | Name         | Purpose                         | IP Range         | Notes                           |
-|---------|--------------|----------------------------------|------------------|----------------------------------|
-| 1       | Internal Network    | Admin devices and services       | 192.168.1.0/24   | Restricted access, WPA2         |
-| 2       | IoT Network   | Workstations and secure clients  | 192.168.2.0/24   | ACL-controlled, high trust      |
-| 3       | Guest Network   | Internal servers and backups     | 192.168.3.0/24   | Inter-zone access enabled       |
-| 4       | SOC Network      | Smart home/embedded devices      | 192.168.4.0/24   | Internet access only            |
-| 5       | HoneyNet      | Honeypot systems and traps       | 192.168.5.0/24   | Captive portal, high logging    |
-| 10      | SAN   | Guest laptops, desktops          | 192.168.10.0/24  | Limited lateral access          |
-| 40      | DMZ           | Public-facing services           | 192.168.40.0/24  | Isolated disk, external-facing  |
+| VLAN ID | Name             | Purpose                              | IP Range         | Notes                                                         |
+|---------|------------------|---------------------------------------|------------------|---------------------------------------------------------------|
+| 1       | Internal Network | Admin devices and core infrastructure | 192.168.1.0/24   | Restricted access, ACLs/WPA3                                  |
+| 2       | IoT Network      | Smart home and embedded devices       | 192.168.2.0/24   | Internet only, ACLs/WPA2                                      |
+| 3       | Guest Network    | Temporary user devices                | 192.168.3.0/24   | Segmented, rate-limited                                       |
+| 4       | SOC Network      | Security monitoring and response tools| 192.168.4.0/24   | Connected to logging and SIEM stack                           |
+| 5       | HoneyNet         | Deceptive honeypot systems            | 192.168.5.0/24   | Captive portal, aggressive logging                            |
+| 6       | SAN              | Storage and backup infrastructure     | 192.168.6.0/24   | Limited lateral access, no internet                           |
 
 ---
 
