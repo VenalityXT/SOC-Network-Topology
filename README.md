@@ -3,15 +3,16 @@
 This repository documents the design and implementation of a segmented, security-focused home network using pfSense, VLANs, and managed switches. It demonstrates enterprise-level network architecture practices with detailed configuration and zone isolation to simulate secure real-world environments.
 
 ## Table of Contents
-- Project Overview  
-- Technologies Used  
-- Objectives  
-- Key Achievements  
-- Skills Demonstrated  
-- Setup and Configuration Guide  
-- Repository Structure  
-- Recommendations for Future Enhancements  
-- License  
+- [Project Overview](#project-overview)
+- [Technologies Used](#technologies-used)
+- [Objectives](#objectives)
+- [Key Achievements](#key-achievements)
+- [Skills Demonstrated](#skills-demonstrated)
+- [Setup and Configuration Guide](#setup-and-configuration-guide)
+- [Repository Structure](#repository-structure)
+- [Recommendations for Future Enhancements](#recommendations-for-future-enhancements)
+- [License](#license)
+
 
 ## Project Overview
 
