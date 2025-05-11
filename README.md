@@ -18,7 +18,7 @@ This repository documents the design and implementation of a segmented, security
 
 This lab simulates a secure home network using pfSense to manage six isolated VLANs (Client, IoT, Server, DMZ, Admin, and HoneyNet), configured with strict firewall rules, service zoning, and access control. The project replicates core enterprise network principles for training, experimentation, and practical demonstration of security architecture.
 
-[Network Topology](https://raw.githubusercontent.com/VenalityXT/SOC-Network-Topology/main/Network-Topology.svg)
+[Network Topology](https://raw.githubusercontent.com/VenalityXT/SOC-Network-Topology/refs/heads/main/Network-Topology.svg)
 
 ## Technologies Used
 
