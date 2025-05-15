@@ -1,3 +1,10 @@
+[![](https://img.shields.io/badge/Overview-gray)](#overview)
+[![](https://img.shields.io/badge/Architecture-blue)](#architecture)
+[![](https://img.shields.io/badge/Threat_Detection-red)](#threat-detection)
+[![](https://img.shields.io/badge/Firewall_Config-green)](#firewall-config)
+[![](https://img.shields.io/badge/Wiki-blueviolet)](https://github.com/yourrepo/wiki)
+
+
 # SOC-Network-Topology & Firewall Architecture
 
 This repository documents the design and implementation of a segmented, security-focused home network using pfSense, VLANs, and managed switches. It demonstrates enterprise-level network architecture practices with detailed configuration and zone isolation to simulate secure real-world environments.
